@@ -1,2 +1,2 @@
-/r/* /#!/r/:splat
-/t/* /test#!/t/:splat
+/r/* /#/r/:splat
+/t/* /test#/t/:splat
