@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Testing cf-redirection-bug </title>
+<title>Testing cf redirection regression/bug </title>
 </head>
 <body>
+<code>
+Path redirected from /r/* -
 <script type="text/javascript">
 if(window.location.pathname.indexOf("/r/") == 0) document.write("FAIL");
 else document.write("PASSED");
 </script>  <br />
+
+
+Path added to hash -
 <script type="text/javascript">
 if(window.location.hash.indexOf("#!/r/") == 0) document.write("PASSED");
 else document.write("FAILED");
 </script> 
-
+</code>
 </body>
 </html>
