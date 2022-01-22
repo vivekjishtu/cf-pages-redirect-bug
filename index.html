@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title><script type="text/javascript">
+<title>Testing cf-redirection-bug </title>
+</head>
+<body>
+<script type="text/javascript">
 if(window.location.pathname.indexOf("/r/") == 0) document.write("FAIL");
 else document.write("PASSED");
-</script> - Testing cf-redirection-bug </title>
-</head>
+</script>  <br />
+<script type="text/javascript">
+if(window.location.hash.indexOf("#!/r/") == 0) document.write("PASSED");
+else document.write("FAILED");
+</script> 
+
+</body>
 </html>
